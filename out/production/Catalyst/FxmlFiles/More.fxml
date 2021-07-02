@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="101.0" prefWidth="187.0" style="-fx-background-color: #ffff00;" />
+            <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="980.0" prefWidth="184.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox fx:id="homeButton" onMousePressed="#returnHome" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home" wrappingWidth="145.02303504943848" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tasks" wrappingWidth="145.02303504943848" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Old" wrappingWidth="145.02303504943848" />
+               </children>
+            </HBox>
+            <HBox prefHeight="101.0" prefWidth="87.0" style="-fx-border-color: #000000;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="More" wrappingWidth="145.02303504943848" />
+               </children>
+            </HBox>
+            <VBox>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F5F5F5;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home" />
+               </children>
+            </HBox>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="1434.0">
+               <children>
+                  <VBox fx:id="block1" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #FF0000;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox fx:id="block2" prefHeight="400.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #FF0000;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="block3" prefHeight="400.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #FF0000;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="block4" prefHeight="400.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #FF0000;">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F5F5F5;">
+               <children>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="1434.0">
+                     <children>
+                        <VBox fx:id="block5" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #FF0000;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="block6" prefHeight="400.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #FF0000;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="block7" prefHeight="400.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #FF0000;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="block8" prefHeight="400.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #FF0000;">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </center>
+</BorderPane>

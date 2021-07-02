@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="101.0" prefWidth="187.0" style="-fx-background-color: #ffff00;" />
+            <HBox prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="980.0" prefWidth="184.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox fx:id="homeButton" onMousePressed="#returnHome" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home" wrappingWidth="145.02303504943848" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tasks" wrappingWidth="145.02303504943848" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Old" wrappingWidth="145.02303504943848" />
+               </children>
+            </HBox>
+            <HBox prefHeight="101.0" prefWidth="87.0" style="-fx-border-color: #000000;">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="More" wrappingWidth="145.02303504943848" />
+               </children>
+            </HBox>
+            <VBox>
+               <children>
+                  <HBox onMousePressed="#changeName" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F5F5F5;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #000000;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Home" />
+               </children>
+            </HBox>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="1434.0">
+               <children>
+                  <VBox fx:id="block1" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
+                           <children>
+                              <Text fx:id="block1Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="156.0" prefWidth="399.0">
+                           <children>
+                              <Text fx:id="block1Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="101.0" prefWidth="190.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
+                                    <Text fx:id="block1Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="101.0" prefWidth="212.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
+                                    <Text fx:id="block1End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                  </VBox>
+                  <VBox fx:id="block2" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
+                           <children>
+                              <Text fx:id="block2Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="156.0" prefWidth="399.0">
+                           <children>
+                              <Text fx:id="block2Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="101.0" prefWidth="190.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
+                                    <Text fx:id="block2Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="101.0" prefWidth="212.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
+                                    <Text fx:id="block2End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="block3" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
+                           <children>
+                              <Text fx:id="block3Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="156.0" prefWidth="399.0">
+                           <children>
+                              <Text fx:id="block3Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="101.0" prefWidth="190.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
+                                    <Text fx:id="block3Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="101.0" prefWidth="212.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
+                                    <Text fx:id="block3End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox fx:id="block4" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                     <children>
+                        <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
+                           <children>
+                              <Text fx:id="block4Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="156.0" prefWidth="399.0">
+                           <children>
+                              <Text fx:id="block4Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="101.0" prefWidth="190.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
+                                    <Text fx:id="block4Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                              <VBox prefHeight="101.0" prefWidth="212.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
+                                    <Text fx:id="block4End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="10.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #F5F5F5;">
+               <children>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="1434.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox fx:id="block5" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
+                                 <children>
+                                    <Text fx:id="block5Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="156.0" prefWidth="399.0">
+                                 <children>
+                                    <Text fx:id="block5Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="101.0" prefWidth="190.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
+                                          <Text fx:id="block5Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox prefHeight="101.0" prefWidth="212.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
+                                          <Text fx:id="block5End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox fx:id="block6" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
+                                 <children>
+                                    <Text fx:id="block6Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="156.0" prefWidth="399.0">
+                                 <children>
+                                    <Text fx:id="block6Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="101.0" prefWidth="190.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
+                                          <Text fx:id="block6Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox prefHeight="101.0" prefWidth="212.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
+                                          <Text fx:id="block6End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="block7" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
+                                 <children>
+                                    <Text fx:id="block7Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="156.0" prefWidth="399.0">
+                                 <children>
+                                    <Text fx:id="block7Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="101.0" prefWidth="190.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
+                                          <Text fx:id="block7Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox prefHeight="101.0" prefWidth="212.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
+                                          <Text fx:id="block7End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="block8" prefHeight="200.0" prefWidth="400.0" style="-fx-border-color: #000000;">
+                           <children>
+                              <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
+                                 <children>
+                                    <Text fx:id="block8Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="156.0" prefWidth="399.0">
+                                 <children>
+                                    <Text fx:id="block8Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="101.0" prefWidth="190.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
+                                          <Text fx:id="block8Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                    <VBox prefHeight="101.0" prefWidth="212.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
+                                          <Text fx:id="block8End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets top="10.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </center>
+</BorderPane>
