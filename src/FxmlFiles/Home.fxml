@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
    <top>
       <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
          <children>
@@ -93,7 +93,7 @@
                         </HBox>
                         <HBox prefHeight="156.0" prefWidth="399.0">
                            <children>
-                              <Text fx:id="block1Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                              <Text id="descriptbox1" fx:id="block1Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Database.Task Description" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -104,7 +104,7 @@
                               <VBox prefHeight="101.0" prefWidth="190.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
-                                    <Text fx:id="block1Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                    <Text id="startbox1" fx:id="block1Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -113,7 +113,7 @@
                               <VBox prefHeight="101.0" prefWidth="212.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
-                                    <Text fx:id="block1End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                    <Text id="endbox1" fx:id="block1End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -130,7 +130,7 @@
                      <children>
                         <HBox prefHeight="56.0" prefWidth="406.0" style="-fx-border-color: #FF0000;">
                            <children>
-                              <Text fx:id="block2Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
+                              <Text id="titlebox2" fx:id="block2Title" strokeType="OUTSIDE" strokeWidth="0.0" text="This is a task" wrappingWidth="85.8870792388916" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -138,7 +138,7 @@
                         </HBox>
                         <HBox prefHeight="156.0" prefWidth="399.0">
                            <children>
-                              <Text fx:id="block2Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                              <Text id="descriptbox2" fx:id="block2Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Database.Task Description" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -149,7 +149,7 @@
                               <VBox prefHeight="101.0" prefWidth="190.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="170.3670253753662" />
-                                    <Text fx:id="block2Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
+                                    <Text id="startbox2" fx:id="block2Start" strokeType="OUTSIDE" strokeWidth="0.0" text="Date1" wrappingWidth="152.70302391052246" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -158,7 +158,7 @@
                               <VBox prefHeight="101.0" prefWidth="212.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="152.7030792236328" />
-                                    <Text fx:id="block2End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
+                                    <Text id="endbox2" fx:id="block2End" strokeType="OUTSIDE" strokeWidth="0.0" text="Date2" wrappingWidth="129.66311645507812" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -186,7 +186,7 @@
                         </HBox>
                         <HBox prefHeight="156.0" prefWidth="399.0">
                            <children>
-                              <Text fx:id="block3Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                              <Text fx:id="block3Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Database.Task Description" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -234,7 +234,7 @@
                         </HBox>
                         <HBox prefHeight="156.0" prefWidth="399.0">
                            <children>
-                              <Text fx:id="block4Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                              <Text fx:id="block4Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Database.Task Description" />
                            </children>
                            <padding>
                               <Insets left="10.0" />
@@ -306,7 +306,7 @@
                               </HBox>
                               <HBox prefHeight="156.0" prefWidth="399.0">
                                  <children>
-                                    <Text fx:id="block5Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                                    <Text fx:id="block5Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Database.Task Description" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -351,7 +351,7 @@
                               </HBox>
                               <HBox prefHeight="156.0" prefWidth="399.0">
                                  <children>
-                                    <Text fx:id="block6Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                                    <Text fx:id="block6Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Database.Task Description" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -399,7 +399,7 @@
                               </HBox>
                               <HBox prefHeight="156.0" prefWidth="399.0">
                                  <children>
-                                    <Text fx:id="block7Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                                    <Text fx:id="block7Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Database.Task Description" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
@@ -447,7 +447,7 @@
                               </HBox>
                               <HBox prefHeight="156.0" prefWidth="399.0">
                                  <children>
-                                    <Text fx:id="block8Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Description" />
+                                    <Text fx:id="block8Descript" strokeType="OUTSIDE" strokeWidth="0.0" text="Database.Task Description" />
                                  </children>
                                  <padding>
                                     <Insets left="10.0" />
